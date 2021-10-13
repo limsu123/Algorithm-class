@@ -23,18 +23,17 @@ class Dict:
     def Print(self):
         for i in range(M):
             if Dict.a[i] != -1:
-                print('#',)
+                print('#', end = '')
             else:
-                print(' ',)
+                print(' ', end = '')
             if(i + 1) % 60 == 0:
                 print()
 
 import random, time
 
-N = 10000
-M = 10391
-#N = 1000
-#M = 1009
+
+N = 1000
+M = 1009
 key = []
 s_key = []
 for i in range(N):
@@ -52,4 +51,4 @@ for i in range(N):
 end_time = time.time() - start_time
 print('선형 탐사법의 실행 시간 (N =%d) : %0.3f' % (N,end_time))
 print('탐색 완료')
-#d.print()
+d.Print()
